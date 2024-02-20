@@ -28,7 +28,7 @@ Rationale: Urbanization involves migration from rural areas to urban areas and s
 Set up
 
 Time frame: Year of 2019
-Tools: Python, JavaScript, Tableau
+Tools:Python, JavaScript, Tableau
 Sources:
 
 Population density information
@@ -47,7 +47,10 @@ Ethical Considerations
 
 Our group made a conscious decision to use data from reputable sources. We agreed that this would give us data that is accurate, not skewed, and store in a secure manner. The data we used is anonymous, containing no personal identification or details. 
 
+Another factor to consider in this project was that the data displayed large variances in their average population densities so grouping had to be done in order to accommodate this. 
+
 Project interaction
 
 An interactive map was created using JavaScript. The pink markers represent the county density, the white show total population. Users adjust the view by toggling the options on and off. Users also have an option for a street map or topographic map layer to view the county data.
 
+An interactive pie graph was created in JavaScript to allow users to choose a different graph for each urbanization group using the dropdown menu. They could also hover above each pie slice to view the specific number of occurrences of each crime type.
