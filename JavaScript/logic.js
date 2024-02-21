@@ -20,7 +20,7 @@ for (let i = 0; i < counties.length; i++) {
       color: "white",
       fillColor: "white",
       radius: markerSize(counties[i].county.population)
-    })
+    }).bindPopup(`<h1>${counties[i].county.name}</h1> <hr> <h3>Population: ${counties[i].county.population}</h3>`)
   );
 
   // Set the marker radius for the density by passing the density to the markerSize() function.
@@ -31,7 +31,7 @@ for (let i = 0; i < counties.length; i++) {
       color: "#ffb3ff",
       fillColor: "#ffb3ff",
       radius: markerTwo(counties[i].county.density)
-    })
+    }).bindPopup(`<h1>${counties[i].county.name}</h1> <hr> <h3>Density: ${counties[i].county.density}</h3>`)
   );
 }
 
@@ -62,7 +62,7 @@ let overlayMaps = {
 
 // Define a map object.
 let myMap = L.map("map", {
-  center: [37.09, -95.71],
+  center: [37.09, -120],
   zoom: 5,
   layers: [street, populations, densities]
 });
