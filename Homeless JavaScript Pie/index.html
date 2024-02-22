@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown Events</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h2>Crime by County Urbanization Groups</h2>
+    <p>Numbers on hover reflect the number of occurrences of each crime type from 2019 California data.</p>
+    <select id="selDataset">
+        <option value="lower_tier">Lower Group</option>
+        <option value="middle_tier">Middle Group</option>
+        <option value="upper_middle_tier">Upper Middle Group</option>
+        <option value="upper_tier">Upper Group</option>
+    </select>
+
+    <div id="pie"></div>
+
+    <p>Data Sources:<br />
+        <ul>
+            <li>
+                <a href="https://www.ppic.org/data-set/crime-rates-in-california/"> Crime Rates by California County 2019 </a>
+            </li>
+            </ul>
+    </p>
+    <script src="data.js"></script>
+    <script src="plots.js"></script>
+</body>
+</html>
